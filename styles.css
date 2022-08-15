@@ -67,11 +67,6 @@ ul {
   color: black;
 }
 
-.container-2 input[type="text"]:focus {
-  background-color: white;
-  opacity: 0.7;
-}
-
 #btn {
   margin-left: 10px;
 }
