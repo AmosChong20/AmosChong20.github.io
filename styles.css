@@ -23,7 +23,8 @@ body {
   text-decoration: none;
   border: 2px solid darkolivegreen;
   padding: 10px 20px;
-  color: darkolivegreen;
+  color: black;
+  border-color: black;
 }
 
 .navbar a:hover {
