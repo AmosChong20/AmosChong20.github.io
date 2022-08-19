@@ -11,22 +11,25 @@ body {
 }
 
 .navbar {
-  max-height: 100px;
+  height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 50px;
   margin: 10px 15px;
 }
 
 .navbar a {
   text-decoration: none;
-  color: black;
+  border: 2px solid darkolivegreen;
+  padding: 10px 20px;
+  color: darkolivegreen;
 }
 
 .navbar a:hover {
-  text-decoration: underline;
   color: black;
+  background: rgba(256, 256, 256, 0.5);
+  padding: 10px 20px;
 }
 
 ul {
