@@ -36,7 +36,7 @@ body {
 .navbar a:hover {
   color: black;
   background: rgba(256, 256, 256, 0.5);
-  padding: 2px 2px;
+  padding: 12px 25px;
 }
 
 ul {
