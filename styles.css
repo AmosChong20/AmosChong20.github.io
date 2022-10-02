@@ -43,7 +43,7 @@ ul {
   list-style-type: none;
 }
 
-.nav > div {
+.nav > li {
   margin-left: 20px;
 }
 
