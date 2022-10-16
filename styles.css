@@ -9,13 +9,66 @@ h1 {
 }
 
 body {
-  background-image: url("bg.jpeg");
-  background-size: cover;
-  background-position: top center;
+  background-color: #dcdcdc !important;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.eql-btn {
+  padding: 5px;
+  margin-right: 30px;
+  border-color: transparent;
+  color: black;
+  background-color: transparent;
+}
+
+.workspaceul {
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  transition: all 0.2s linear;
+  padding-right: 1rem;
+}
+
+.workspaceul a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  color: hsl(209, 34%, 30%);
+  text-decoration: none;
+}
+
+.workspaceul li {
+  width: 8rem;
+}
+
+.workspaceul a:hover {
+  background-color: #c8c8c8;
+  color: black;
+  padding-left: 1.5rem;
+}
+
+.show-workspaceul {
+  height: 10rem;
+}
+
+.eql-btn:hover {
+  background-color: #c8c8c8;
+  border-radius: 80%;
+  border-width: 0.25rem;
+  cursor: pointer;
 }
 
 .nav {
-  width: 100%;
+  margin-left: 20px;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -23,7 +76,7 @@ body {
   padding: 5px;
 }
 
-.navbar a {
+.navbar .nav a {
   text-decoration: none;
   border: 2px solid rgb(228, 248, 195);
   border-radius: 5px;
@@ -33,10 +86,9 @@ body {
   transition: 0.2s all linear;
 }
 
-.navbar a:hover {
+.navbar .nav a:hover {
   color: black;
   background: rgba(256, 256, 256, 0.5);
-  padding: 12px 25px;
 }
 
 ul {
