@@ -39,6 +39,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        {/* Hello */}
         <Flex flexDir={'column'}>
           <form onSubmit={handleSubmit}>
           <div className={styles.title}>Hi! What can I do for you?</div>
