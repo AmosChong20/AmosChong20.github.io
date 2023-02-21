@@ -39,106 +39,105 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        {/* Hello */}
         <Flex flexDir={'column'}>
           <form onSubmit={handleSubmit}>
           <div className={styles.title}>Hi! What can I do for you?</div>
             <Input variant={'flushed'} size='lg' borderBottom={'solid 1.5px black'} fontFamily={'Abel'} letterSpacing={'2px'} pl={'5px'} fontSize="30px" focusBorderColor='red' onChange={(e) => setQuery(e.target.value)}/>
           </form>
         </Flex>
-        <Grid templateColumns='repeat(3, 1fr)'>
-            <GridItem w='100%' gap={6}>
+        <div className={styles.grid}>
+          <div className={styles.gridItems}>
             <Link href={"https://www.gmail.com"}>
-              <Card margin={'20px'}>
+              <Card margin={'20px'} justify={'center'} align='center'>
                 <CardBody justify={'center'} align={'center'} w={400} h={200}>
                   <FaGoogle/>
                   <Heading fontFamily={'Abel'}>Gmail</Heading>
               </CardBody>
-              </Card>
-            </Link>
-          </GridItem>
-          <GridItem w='100%' gap={6}>
+                </Card>
+          </Link>
+        </div>
+        <div className={styles.gridItems}>
             <Link href={"https://www.youtube.com"}>
-              <Card margin={'20px'}>
+              <Card margin={'20px'} justify={'center'} align='center'>
                 <CardBody justify={'center'} align={'center'} w={400} h={200}>
                   <FaYoutube/>
                   <Heading fontFamily={'Abel'}>Youtube</Heading>
               </CardBody>
               </Card>
-            </Link>
-          </GridItem>
-          <GridItem w='100%' gap={6}>
+          </Link>
+        </div>
+        <div className={styles.gridItems}>
             <Link href={"https://www.leetcode.com"}>
-              <Card margin={'20px'}>
+              <Card margin={'20px'} justify={'center'} align='center'>
                 <CardBody justify={'center'} align={'center'} w={400} h={200}>
                   <FaPython/>
                   <Heading fontFamily={'Abel'}>Leetcode</Heading>
               </CardBody>
               </Card>
-            </Link>
-          </GridItem>
-          <GridItem w='100%' gap={6}>
+          </Link>
+        </div>
+        <div className={styles.gridItems}>
             <Link href={"https://www.github.com"}>
-              <Card margin={'20px'}>
+              <Card margin={'20px'} justify={'center'} align='center'>
                 <CardBody justify={'center'} align={'center'} w={400} h={200}>
                   <FaGithub/>
                   <Heading fontFamily={'Abel'}>Github</Heading>
               </CardBody>
               </Card>
-            </Link>
-          </GridItem>
-          <GridItem w='100%' gap={6}>
+          </Link>
+        </div>
+        <div className={styles.gridItems}>
             <Link href={"https://ntulearn.ntu.edu.sg/ultra/institution-page"}>
-              <Card margin={'20px'}>
+              <Card margin={'20px'} justify={'center'} align='center'>
                 <CardBody justify={'center'} align={'center'} w={400} h={200}>
                 <FaBook/>
                   <Heading fontFamily={'Abel'}>NTULearn</Heading>
               </CardBody>
               </Card>
-            </Link>
-          </GridItem>
-          <GridItem w='100%' gap={6}>
+          </Link>
+        </div>
+        <div className={styles.gridItems}>
             <Link href={"https://sso.wis.ntu.edu.sg/links/ugstudent.html"}>
-              <Card margin={'20px'}>
+              <Card margin={'20px'} justify={'center'} align='center'>
                 <CardBody justify={'center'} align={'center'} w={400} h={200}>
                 <FaHighlighter/>
                   <Heading fontFamily={'Abel'}>StudentLink</Heading>
               </CardBody>
               </Card>
-            </Link>
-          </GridItem>
-          <GridItem w='100%' gap={6}>
+          </Link>
+        </div>
+        <div className={styles.gridItems}>
             <Link href={"https://entuedu.sharepoint.com/sites/student"}>
-              <Card margin={'20px'}>
+              <Card margin={'20px'} justify={'center'} align='center'>
                 <CardBody justify={'center'} align={'center'} w={400} h={200}>
                 <FaUserGraduate/>
                   <Heading fontFamily={'Abel'}>Student Services</Heading>
               </CardBody>
               </Card>
-            </Link>
-          </GridItem>
-          <GridItem w='100%' gap={6}>
+          </Link>
+        </div>
+        <div className={styles.gridItems}>
             <Link href={"https://chat.openai.com/chat"}>
-              <Card margin={'20px'}>
+              <Card margin={'20px'} justify={'center'} align='center'>
                 <CardBody justify={'center'} align={'center'} w={400} h={200}>
                 <FaUserGraduate/>
                   <Heading fontFamily={'Abel'}>ChatGPT</Heading>
               </CardBody>
               </Card>
-            </Link>
-          </GridItem>
-          <GridItem w='100%' gap={6}>
+          </Link>
+        </div>
+        <div className={styles.gridItems}>
             <Link href={"https://gem.ntu.edu.sg/index.cfm?FuseAction=Students.AngularHome"}>
-              <Card margin={'20px'}>
+              <Card margin={'20px'} justify={'center'} align='center'>
                 <CardBody justify={'center'} align={'center'} w={400} h={200}>
                 <FaHighlighter/>
                   <Heading fontFamily={'Abel'}>GEM Explorer</Heading>
               </CardBody>
               </Card>
-            </Link>
-          </GridItem>
+          </Link>
+          </div>
           
-        </Grid>
+          </div>
       </main>
     </>
   )
